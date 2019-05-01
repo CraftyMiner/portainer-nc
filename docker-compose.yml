@@ -2,9 +2,7 @@ version: '2'
 
 volumes:
   nextcloud:
-  driver: local
   db:
-  driver: local
 
 services:
   db:
@@ -12,7 +10,6 @@ services:
     restart: always
     volumes:
       - db:/var/lib/mysql
-      driver: local
     environment:
       - MYSQL_ROOT_PASSWORD=1NextCl0ud!1
       - MYSQL_PASSWORD=NextCloud88
@@ -27,5 +24,4 @@ services:
       - db
     volumes:
       - nextcloud:/var/www/html
-      driver: local
     restart: always
