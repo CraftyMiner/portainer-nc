@@ -4,7 +4,7 @@ nginx-ssl-proxy:
   image: danieldent/nginx-ssl-proxy
   restart: always
   environment:
-    UPSTREAM: 127.0.0.1:8080
+    #UPSTREAM: 127.0.0.1:8080
     SERVERNAME: e7matt.duckdns.org
     #EXTRANAMES: www.test.example.com,test2.example.com
   ports:
