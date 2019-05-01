@@ -1,3 +1,5 @@
+version: "2"
+services:
 nginx-ssl-proxy:
   image: danieldent/nginx-ssl-proxy
   restart: always
